@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>L'IUT de Lens et l'étranger</title>
+    <link rel="icon" type="image/png" href="complements/favicon.ico"/>
+    <link rel="stylesheet" href="complements/bootstrap.min.css">
+    <link rel="stylesheet" href="complements/projet.css">
+    <script type="text/javascript" src="complements/projet.js"></script>
+  </head>
+
+  <header>
+    <div class="container-fluid row col-xs-12 col-sd-12 col-md-12 col-lg-12">
+      <img class="col-xs-3 col-sd-3 col-md-2 col-lg-1 logo-responsive" src="complements/logoIUT.png" alt="Logo IUT">
+      <ul id="menu" class="col-xs-6 col-sd-6 col-md-8 col-lg-10">
+        <li><a href="#" class="txt-responsive" onclick="afficherAccueil()">Accueil</a>
+          <ul>
+            <li><a href="#" onclick="afficherTC()">TC</a></li>
+            <li><a href="#" onclick="afficherInfo()">Info</a></li>
+            <li><a href="#" onclick="afficherMMI()">MMI</a></li>
+            <li><a href="#" onclick="afficherGEA()">GEA</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="txt-responsive" onclick="afficherStages()">Stages</a>
+        	<ul>
+            <li><a href="#" onclick="afficherStagesTC()">TC</a></li>
+            <li><a href="#" onclick="afficherStagesInfo()">Info</a></li>
+        		<li><a href="#" onclick="afficherStagesMMI()">MMI</a></li>
+        		<li><a href="#" onclick="afficherStagesGEA()">GEA</a></li>
+        	</ul>
+      	</li>
+      	<li><a href="#" class="txt-responsive" onclick="afficherSemestres()">Semestres</a>
+      		<ul>
+            <li><a href="#" onclick="afficherSemestresTC()">TC</a></li>
+            <li><a href="#" onclick="afficherSemestresInfo()">Info</a></li>
+      			<li><a href="#" onclick="afficherSemestresMMI()">MMI</a></li>
+      			<li><a href="#" onclick="afficherSemestresGEA()">GEA</a></li>
+      		</ul>
+      	</li>
+      	<li><a href="#" class="txt-responsive" onclick="afficherConseils()">Conseils</a>
+      		<ul>
+      			<li><a href="#" onclick="afficherBenefices()">Bénéfices</a></li>
+      			<li><a href="#" onclick="afficherFinancement()">Financement</a></li>
+      			<li><a href="#" onclick="afficherPreparation()">Préparation</a></li>
+      			<li><a href="#" onclick="afficherTemoignages()">Témoignages</a></li>
+      		</ul>
+      	</li>
+        <li><a href="#" class="txt-responsive" onclick="afficherPlan()">Plan</a>
+          <ul>
+            <li><a href="#" onclick="afficherPlanTC()">TC</a></li>
+            <li><a href="#" onclick="afficherPlanInfo()">Info</a></li>
+            <li><a href="#" onclick="afficherPlanMMI()">MMI</a></li>
+            <li><a href="#" onclick="afficherPlanGEA()">GEA</a></li>
+          </ul>
+        </li>
+      </ul>
+      <img class="col-xs-3 col-sd-3 col-md-2 col-lg-1 logo-responsive" src="complements/logoArtois.png" alt="Logo Artois">
+      <!--<img class="row col-xs-6 col-sd-6 col-md-6 col-lg-6 logo-responsive" src="complements/banniere.png" alt="Bannière">-->
+    </div>
+  </header>
+
+  <body>
+    <div class="container-fluid row">
+      <div class="container col-xs-9 col-sd-9 col-md-9 col-lg-9 corps">
+        <div id="accueil">
+          <p>
+            <h1>Accueil</h1><br>
+            À l'IUT de Lens, tous les étudiants peuvent partir
+            réaliser leurs études à l'étranger, peu importe leur filière.<br>
+            Découvrez les possibilités de stages ou de semestres à l'étranger
+            selon les départements proposés à l'IUT de Lens, <br>
+            ainsi que des conseils afin de bien préparer ce stage/semestre. <br>
+            Un témoignage d'élève ayant participé à cette expérience
+            vous est également partagé.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoTC.png" alt="TC" title="Présentation du département TC" onclick="afficherTC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoINFO.png" alt="Info" title="Présentation du département Informatique" onclick="afficherInfo()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoMMI.png" alt="MMI" title="Présentation du département MMI" onclick="afficherMMI()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoGEA.png" alt="GEA" title="Présentation du département GEA" onclick="afficherGEA()">
+        </div>
+
+        <div id="TC">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+            <p>
+              <h1>TC</h1><br>
+                <h2>Accès à la formation :</h2>
+                  Le DUT techniques de commercialisation est accessible à tout titulaire d'un baccalauréat (le plus souvent bac général ou bac STMG) sur
+                  dossier, entretien, voire tests.<br>
+                  Niveau terminal d'études : Bac +2<br><br>
+                <h2>Débouchés avec un DUT TC :</h2>
+                  Le titulaire de ce DUT est un collaborateur commercial polyvalent capable de vendre, acheter, distribuer, gérer des stocks.<br>
+                  Il exerce surtout ses fonctions dans la grande distribution, l'industrie ou la banque, ou dans une société de transport ou d'assurances.<br>
+                  En début de carrière, il occupe généralement un poste de commercial, de représentant, de chargé de clientèle ou de chef de rayon.<br>
+                  Après une première expérience, il pourra devenir cadre moyen, entrer dans une direction commerciale ou encadrer des équipes de vente.<br>
+                  Certaines orientations de ce DUT peuvent se faire dans un autre pays européen : en Allemagne pour l'orientation gestion touristique,<br>
+                  en Espagne pour l'orientation commerce affaires et développement des relations économiques.<br>
+                  A l’issue du DUT, il peut faire le choix d’une insertion professionnelle immédiate ou de poursuites d’études nombreuses :<br><br>
+                <h2>Poursuites d'études :</h2>
+                  Si le DUT prépare directement à l'insertion professionnelle, 87% des diplômés de DUT poursuivent des études d'après l'enquête 2014 du ministère de l'éducation nationale et de l'enseignement supérieur.<br/>
+                  Par exemple:
+                  <ul type="circle">
+                    <li>Licence professionnelle</li>
+                    <li>Licence et master</li>
+                    <li>École de commerce</li>
+                  </ul>
+              </p>
+        </div>
+
+        <div id="Info">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+            <p>
+              <h1>Info</h1><br>
+                <h2>Accès à la formation :</h2>
+                  Pour acceder au DUT informatique, il faut être titulaire d’un Baccalauréat S, ES, STMG, STI2D ou équivalent.<br>
+                  Il est aussi demandé d'être volontaire et motivé(e), curieux(se) des nouvelles technologies.<br>
+                  De bonnes bases scientifiques sont conseillées. Aucun niveau préalable en informatique n’est demandé.<br>
+                  L’admission se fait sur l’étude du dossier des classes de première et terminale et éventuellement un entretien.<br><br>
+                  Niveau terminal d'études : Bac +2<br>
+                  Temps de formation en entreprise : 10 semaines <br><br>
+                <h2>Débouchés avec un DUT INFO :</h2>
+                  Le DUT informatique forme des assistants ingénieurs et des chefs de projet en informatique de gestion et en informatique industrielle.<br>
+                  Immédiatement opérationnels en développement logiciel et matériel, ils participent à la conception, la réalisation et la mise en œuvre de
+                  systèmes informatiques en fonction des cahiers des charges qui leur sont soumis.<br>
+                  Ils sont capables de répondre aux besoins des entreprises en matière d'administration de réseaux, de conception et de réalisation de
+                  programmes, d'assistance technique, de gestion de bases de données.<br><br>
+                <h2>Poursuites d'études :</h2>
+                  Si le DUT prépare directement à l'insertion professionnelle, 92 % des diplomés du DUT informatique poursuivent leurs études selon
+                  l'enquête d'insertion 2014 du ministère de l'éducation nationale et de l'enseignement supérieur.<br>
+                  Par exemple:
+                    <ul type="circle">
+                      <li>Bac+3 : licence professionnelle</li>
+                      <li>Bac+5 : écoles d’ingénieur en informatique ou licence et master d’informatique</li>
+                      <li>Bac+8 : Doctorat en informatique</li>
+                      <li>Possibilité de passer de nombreux concours</li>
+                    </ul>
+              </p>
+        </div>
+
+        <div id="MMI">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+            <p>
+              <h1>MMI</h1><br>
+                <h2>Accès à la formation :</h2>
+                  Pour acceder au DUT Métiers du Multimédia et de l'Internet, il faut possèder le Bac ou un titre équivalent.<br>
+                  Le Programme Pédagogique National privilégie toutefois l’usage des mathématiques et d’autres concepts scientifiques en tant qu’outils au
+                  service des objectifs à atteindre.<br><br>
+                  Niveau terminal d'études : Bac +2<br/>
+                  Temps de formation en entreprise : 10 semaines <br><br>
+                <h2>Débouchés avec un DUT MMI :</h2>
+                  La polyvalence du diplômé MMI permet une insertion professionnelle dans les agences de création de sites internet, de conception
+                  multimédia, de communication, de publicité ou d’événementiel.<br>
+                  Le large spectre de compétences des titulaires du DUT MMI est aussi apprécié des organisations publiques et privées ou des services informatiques.<br><br>
+                <h2>Poursuites d'études :</h2>
+                  Si le DUT prépare directement à l'insertion professionnelle, 86 % des diplômés du DUT MMI poursuivent leurs études d'après l'enquête
+                  2014 du ministère de l'éducation nationale et de l'enseignement supérieur.<br>
+                  Les poursuites d’études sont très diverses dans les trois domaines principaux de la formation :
+                    <ul type="circle">
+                      <li>l'Audiovisuel</li>
+                      <li>la Communication</li>
+                      <li>le Web</li>
+                    </ul>
+              </p>
+        </div>
+
+        <div id="GEA">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+            <p>
+              <h1>GEA</h1><br>
+                <h2>Accès à la formation :</h2>
+                  Pour acceder au DUT gestion des entreprises et des administartions, il faut être titulaire d’un baccalauréat de type ES, L, S, STI, STMG, <br>
+                  Bac Professionnel ou d’un D.A.E.U. (Diplôme d’Accès aux Etudes Universitaires).<br>
+                  Possibilité de VAE (Validation des Acquis de l’Expérience).<br>
+                  Admission après étude du dossier et entretien.<br><br>
+                  Niveau terminal d'études : Bac +2<br><br>
+                <h2>Débouchés avec un DUT GEA :</h2>
+                  Le DUT GEA a l’avantage de proposer à la fois une insertion professionnelle immédiate (gestion des ressources humaines, comptable,
+                  financière, commerciale, administrative, en entreprises, cabinets d’expertise comptable, collectivités, banques …) et une poursuite
+                  d’études à moyen ou à long terme.<br><br>
+                <h2>Poursuites d'études :</h2>
+                  Si le DUT prépare directement à l'insertion professionnelle, plus de 91% des diplômés de DUT toutes spécialités confondues poursuivent
+                  des études d'après l'enquête d'insertion 2014 du ministère de l'éducation nationale et de l'enseignement supérieur.<br>
+                  Par exemple:
+                    <ul type="circle">
+                      <li>Licences professionnelles</li>
+                      <li>IAE</li>
+                      <li>DCG</li>
+                      <li>licences et masters</li>
+                    </ul>
+              </p>
+        </div>
+
+        <div id="stages">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+          <p>
+            <h1>Stages <img src="complements/suivant.png" alt="Suivant" onclick="afficherSemestres()"></h1><br>
+            Les étudiants peuvent effectuer leur stage de deuxième année sous la forme d’un projet de fin d’études<br>
+            au sein d’un laboratoire universitaire d’un établissement partenaire.<br>
+            Dans ce cadre, les étudiants de première année postulent en juin pour un stage qui se déroule en deuxième année.<br>
+            Les étudiants ont également la possibilité de trouver un stage à l’étranger par leurs propres moyens.<br>
+            Pour plus d'informations, nous vous invitons à lire les <a href="http://www.univ-artois.fr/International/Etudier-a-l-etranger/Candidature-et-selection" target="_blank">modalités de candidature</a> sur le site de l'université d'Artois.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoTC.png" alt="TC" title="Présentation des stages proposés en TC" onclick="afficherStagesTC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoINFO.png" alt="Info" title="Présentation des stages proposés en Informatique" onclick="afficherStagesInfo()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoMMI.png" alt="MMI" title="Présentation des stages proposés en MMI" onclick="afficherStagesMMI()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoGEA.png" alt="GEA" title="Présentation des stages proposés en GEA" onclick="afficherStagesGEA()">
+        </div>
+
+        <div id="stagesTC">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherStages()">
+          <p>
+            <h1>Stages en TC <img src="complements/suivant.png" alt="Suivant" onclick="afficherSemestresTC()"></h1><br>
+            <b> Le département TC vous propose 4 stages différents pour le 4ème semestre (second semestre de la deuxième année) :</b>
+            <ul type="square">
+              <li>Premièrement, nous vous poposons deux stages en <b>Irlande</b> :</li>
+              <ul type="circle">
+                <li>Le premier à <i><u>Dundalk Institute of Technology</u></i> dans la ville de <b>Dundalk</b>.</li>
+                <li>Le second est à <b>Sligo</b> dans l'<i><u>Institute of Technology Sligo</u></i>.</li>
+              </ul>
+              <li>Ensuite, vous avez aussi la possibilité de partir en <b>Pologne</b> dans l'<i><u>University of Lodz</u></i> à <b>Lodz</b>.</li>
+              <li>Pour finir, il y a un stage en <b>Espagne</b>, à <b>Seville</b> dans l'<i><u>Universidad Pablo de Olavide</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur le pays qui vous intéresse.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauIrlande.png" alt="Irlande" onclick="afficherDundalk()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauPologne.png" alt="Pologne" onclick="afficherLodz()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauEspagne.png" alt="Espagne" onclick="afficherSeville()">
+        </div>
+
+        <div id="stagesInfo">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherStages()">
+          <p>
+            <h1>Stages en Info <img src="complements/suivant.png" alt="Suivant" onclick="afficherSemestresInfo()"></h1><br>
+            <b> Le département Informatique vous propose 5 stages différents pour le 4ème semestre (second semestre de la deuxième année) :</b>
+            <ul type="square">
+              <li>Premièrement, vous avez la possibilité de partir en <b>Irlande</b> à <i><u>Dundalk Institute of Technology</u></i> qui est situé à <b>Dundalk</b>.</li>
+              <li>Ensuite, nous vous poposons aussi deux stages en <b>Pologne</b> :</li>
+              <ul type="circle">
+                <li>Le premier est à <b>Varsovie</b> à <i><u>Warsaw University of Technology</u></i>.</li>
+                <li>Le second est à <b>Lodz</b> dans l'<i><u>University of Lodz</u></i>.</li>
+              </ul>
+              <li>De plus, il y a un stage en <b>Grèce</b>, à <i><u>TEI of Thessaly</u></i> qui se trouve à <b>Larissa</b>.</li>
+              <li>Pour finir, vous avez aussi la possibilité de partir en <b>Roumanie</b> à <b>Timisoara</b> dans l'<i><u>Universitatea de Vest din Timisoara</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur le pays qui vous intéresse.
+          </p>
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauIrlande.png" alt="Irlande" onclick="afficherDundalk()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauPologne.png" alt="Pologne" onclick="afficherVarsovie()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauGrece.png" alt="Grece" onclick="afficherLarissa()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauRoumanie.png" alt="Roumanie" onclick="afficherTimisoara()">
+        </div>
+
+        <div id="stagesMMI">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherStages()">
+          <p>
+            <h1>Stages en MMI <img src="complements/suivant.png" alt="Suivant" onclick="afficherSemestresMMI()"></h1><br>
+            <b> Le département MMI vous propose 5 stages différents pour le 4ème semestre (second semestre de la deuxième année) :</b>
+            <ul type="square">
+              <li>Premièrement, vous avez la possibilité de partir en <b>Irlande</b> à <i><u>Dundalk Institute of Technology</u></i> qui est situé à <b>Dundalk</b>.</li>
+              <li>Ensuite, nous vous poposons aussi deux stages en <b>Pologne</b> :</li>
+              <ul type="circle">
+                <li>Le premier est à <b>Varsovie</b> à <i><u>Warsaw University of Technology</u></i>.</li>
+                <li>Le second est à <b>Lodz</b> dans l'<i><u>University of Lodz</u></i>.</li>
+              </ul>
+              <li>De plus, il y a un stage en <b>Grèce</b>, à <i><u>TEI of Thessaly</u></i> qui se trouve à <b>Larissa</b>.</li>
+              <li>Pour finir, vous avez aussi la possibilité de partir en <b>Roumanie</b> à <b>Timisoara</b> dans l'<i><u>Universitatea de Vest din Timisoara</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur le pays qui vous intéresse.
+          </p>
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauIrlande.png" alt="Irlande" onclick="afficherDundalk()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauPologne.png" alt="Pologne" onclick="afficherVarsovie()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauGrece.png" alt="Grece" onclick="afficherLarissa()">
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauRoumanie.png" alt="Roumanie" onclick="afficherTimisoara()">
+        </div>
+
+        <div id="stagesGEA">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherStages()">
+          <p>
+            <h1>Stages en GEA <img src="complements/suivant.png" alt="Suivant" onclick="afficherSemestresGEA()"></h1><br>
+            <b> Le département GEA vous propose un stage au cour du 3ème semestre (premier semestre de la deuxième année) :</b><br>
+            Ce Stage se passe à <b>Seville</b> en <b>Espagne</b> à l'<i><u>Universidad Pablo de Olavide</u></i>.<br>
+            Pour plus de renseignements, cliquez sur le pays qui vous intéresse.
+          </p>
+        <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauEspagne.png" alt="Espagne" onclick="afficherSeville()">
+        </div>
+
+        <div id="semestres">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+          <p>
+            <h1><img src="complements/precedent.png" alt="Précédent" onclick="afficherStages()"> Semestres</h1><br>
+            Les étudiants qui le souhaitent ont la possibilité d’effectuer un semestre d’études au cours de leur deuxième année de DUT.<br>
+            Pour cela, les étudiants doivent poser leur candidature pendant l’année qui précède leur départ.<br>
+            Pour plus d'informations, nous vous invitons à lire les <a href="http://www.univ-artois.fr/International/Etudier-a-l-etranger/Candidature-et-selection" target="_blank">modalités de candidature</a> sur le site de l'université d'Artois.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoTC.png" alt="TC" title="Présentation des semestres proposés en TC" onclick="afficherSemestresTC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoINFO.png" alt="Info" title="Présentation des semestres proposés en Informatique" onclick="afficherSemestresInfo()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoMMI.png" alt="MMI" title="Présentation des semestres proposés en MMI" onclick="afficherSemestresMMI()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoGEA.png" alt="GEA" title="Présentation des semestres proposés en GEA" onclick="afficherSemestresGEA()">
+        </div>
+
+        <div id="semestresTC">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherSemestres()">
+          <p>
+            <h1><img src="complements/precedent.png" alt="Précédent" onclick="afficherStagesTC()"> Semestres en TC</h1><br>
+            <b> Le département TC vous propose 2 séjours d'études pour le 4ème semestre (second semestre de la deuxième année) :</b><br>
+            Ces deux séjours se passent au <b>Canada</b> :
+            <ul type="circle">
+              <li>Le premier se passe à <b>Montréal</b> dans le <i><u>CEGEP du Vieux-Montréal</u></i>.</li>
+              <li>Le second se passe à <b>Chicoutimi</b> dans l'<i><u>Université du Québec à Chicoutimi (UQAC)</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur l'école qui vous intéresse.<br>
+            Consultez également le groupe CREPUQ pour plus d'informations.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCEGEP.png" alt="CEGEP" onclick="afficherCEGEP()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAC.png" alt="UQAC" onclick="afficherUQAC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCREPUQ.png" alt="CREPUQ" onclick="afficherCREPUQ()">
+        </div>
+
+        <div id="semestresInfo">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherSemestres()">
+          <p>
+            <h1><img src="complements/precedent.png" alt="Précédent" onclick="afficherStagesInfo()"> Semestres en Info</h1><br>
+            <b> Le département Informatique vous propose 2 séjours d'études pour le 4ème semestre (second semestre de la deuxième année) :</b><br>
+            Ces deux séjours se passent au <b>Canada</b> :
+            <ul type="circle">
+              <li>Le premier se passe à <b>Montréal</b> dans l'<i><u>Université du Québec à Montréal (UQAM)</u></i>.</li>
+              <li>Le second se passe à <b>Chicoutimi</b> dans l'<i><u>Université du Québec à Chicoutimi (UQAC)</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur l'école qui vous intéresse.<br>
+            Consultez également le groupe CREPUQ ainsi que le stage proposé au Japon pour plus d'informations.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAM.png" alt="UQAM" onclick="afficherUQAM()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAC.png" alt="UQAC" onclick="afficherUQAC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCREPUQ.png" alt="CREPUQ" onclick="afficherCREPUQ()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauJapon.png" alt="Japon" onclick="afficherTohoku()">
+        </div>
+
+        <div id="semestresMMI">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherSemestres()">
+          <p>
+            <h1><img src="complements/precedent.png" alt="Précédent" onclick="afficherStagesMMI()"> Semestres en MMI</h1><br>
+            <b> Le département MMI vous propose 2 séjours d'études pour le 4ème semestre (second semestre de la deuxième année) :</b><br>
+            Ces deux séjours se passent au <b>Canada</b> :
+            <ul type="circle">
+              <li>Le premier se passe à <b>Montréal</b> dans l'<i><u>Université du Québec à Montréal (UQAM)</u></i>.</li>
+              <li>Le second se passe à <b>Chicoutimi</b> dans l'<i><u>Université du Québec à Chicoutimi (UQAC)</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur l'école qui vous intéresse.<br>
+            Consultez également le groupe CREPUQ ainsi que le stage proposé au Japon pour plus d'informations.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAM.png" alt="UQAM" onclick="afficherUQAM()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAC.png" alt="UQAC" onclick="afficherUQAC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCREPUQ.png" alt="CREPUQ" onclick="afficherCREPUQ()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/drapeauJapon.png" alt="Japon" onclick="afficherTohoku()">
+        </div>
+
+        <div id="semestresGEA">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherSemestres()">
+          <p>
+            <h1><img src="complements/precedent.png" alt="Précédent" onclick="afficherStagesGEA()"> Semestres en GEA</h1><br>
+            <b> Le département GEA vous propose 2 séjours d'études pour le 4ème semestre (second semestre de la deuxième année) :</b><br>
+            Ces deux séjours se passent au <b>Canada</b> :
+            <ul type="circle">
+              <li>Le premier se passe à <b>Montréal</b> dans le <i><u>CEGEP du Vieux-Montréal</u></i>.</li>
+              <li>Le second se passe à <b>Chicoutimi</b> dans l'<i><u>Université du Québec à Chicoutimi (UQAC)</u></i>.</li>
+            </ul>
+            Pour plus de renseignements, cliquez sur l'école qui vous intéresse.<br>
+            Consultez également le groupe CREPUQ pour plus d'informations.
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCEGEP.png" alt="CEGEP" onclick="afficherCEGEP()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoUQAC.png" alt="UQAC" onclick="afficherUQAC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive drapeaux" src="complements/logoCREPUQ.png" alt="CREPUQ" onclick="afficherCREPUQ()">
+        </div>
+
+        <div id="conseils">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+          <p>
+            <h1>Conseils</h1><br>
+            <h2>Dans la rubrique Conseils, nous avons 4 parties :</h2><br>
+              <p>Les bénéfices d'un voyage à l'étranger<br><img class="col-xs-12 col-sd-12 col-md-12 col-lg-12 dept-responsive drapeaux" src="complements/benefices.png" alt="Benefices" title="Quels sont les bénéfices d'un séjour à l'étranger ?" onclick="afficherBenefices()"/></p>
+              <p>Financer son voyage à l'étranger<br><img class="col-xs-12 col-sd-12 col-md-12 col-lg-12 dept-responsive drapeaux" src="complements/financement.png" alt="Financement" title="Comment financer un séjour à l'étranger ?" onclick="afficherFinancement()"/></p>
+              <p>Se préparer à partir à l'étranger<br><img class="col-xs-12 col-sd-12 col-md-12 col-lg-12 dept-responsive drapeaux" src="complements/preparation.png" alt="Preparation" title="Comment se préparer à un séjour à l'étranger ?" onclick="afficherPreparation()"/></p>
+              <p>Le témoignage d'un élève de l'IUT de Lens parti faire son semestre à l'étranger<br><img class="col-xs-12 col-sd-12 col-md-12 col-lg-12 dept-responsive drapeaux" src="complements/temoignages.png" alt="Temoignages" title="Présentation d'un témoignage d'un ancien élève" onclick="afficherTemoignages()"/></p>
+          </p>
+        </div>
+
+        <div id="benefices">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherConseils()">
+            <p>
+              <h1>Quels sont les bénéfices ?</h1><br>
+                Étudier à l'étranger est devenu courant chez les étudiants, c'est l'occasion de vivre une expérience enrichissante mais c'est aussi un moyen
+                d'enrichir son CV. De nombreux bénéfices sont à tirer de cette expérience :
+            </p>
+              <ul>
+                <li><h2>Maitriser une langue étrangère</h2>
+                  <p>
+                    Pour maitriser une langue étrangère, il faut pratiquer régulièrement et de manière assidue, en partant à l'étranger vous n'aurez pas
+                    d'autre choix que de vous débrouiller que ce soit en anglais ou dans la langue du pays si celui-ci n'est pas anglophone, ce qui
+                    améliorera considérablement votre niveau dans cette langue.
+                  </p>
+                </li>
+                <li><h2>Devenir autonome</h2>
+                  <p>
+                    Savoir être autonome et indépendant est un immense atout dans votre future vie professionnelle. Choisir un logement, prendre les
+                    transports dans un pays que vous ne connaissez pas va vous permettre de gagner en autonomie.
+                  </p>
+                </li>
+                <li><h2>Découvrir une autre culture</h2>
+                  <p>
+                    Chaque pays possède sa propre culture, c'est une formidable expérience que d'aller la découvrir et la vivre soit même tout en
+                    étudiant.
+                  </p>
+                </li>
+                <li><h2>Enrichir son CV</h2>
+                  <p>
+                    Cette expérience à l'étranger fera passer votre CV au sommet de la pile du recruteur. C'est un atout majeur car cela prouve que vous
+                    maitrisez une seconde langue et que vous être autonome, cette expérience pourra vous permettre de vous démarquer des autres
+                    candidats et faciliter votre recherche d'emploi.
+                  </p>
+                </li>
+                <li><h2>Découvrir de nouvelles façons d'enseigner</h2>
+                  <p>
+                    Les cours sont dans la langue du pays dans lequel vous étudiez, il faudra donc réussir à s'y habituer, ce qui se fait en général assez
+                    rapidement. La relation étudiant - professeur diffère énormemment en fonction du pays, par exemple au Canada il n'y a que très peu
+                    de cours magistraux, les professeurs préférant favoriser la communication avec les élèves. De nombreux étudiants gardent un bon
+                    souvenir de leur séjour à l'étranger.
+                  </p>
+                </li>
+                <li><h2>Agrandir son carnet d'adresses</h2>
+                  <p>
+                    Certains métiers nécessitent d'avoir des contacts un peu partout, un bon réseau de communication international peut s'avérer très
+                    utile dans votre évolution professionnelle. En allant étudier à l'étranger, vous allez cotôyer des personnes venues du monde entier.
+                  </p>
+                </li>
+              </ul>
+        </div>
+
+        <div id="financement">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherConseils()">
+            <p>
+              <h1>Comment le financer ?</h1><br>
+                Différents financements existent pour une mobilité internationale, que ce soit dans le cadre d'études ou de stage.<br>
+                Ces financements sont soumis à certains critères d'éligibilité.
+              </p>
+              <ul>
+
+                <li><h2>Aide à la Mobilité Internationale (AMI)</h2>
+                  <ul>
+                    <li>Être boursier sur critères sociaux (bourse nationale du CROUS)<br>
+                        ou allocataire de l’aide d’urgence annuelle du CROUS (se cumule avec ces bourses)</li>
+                        <a href="#" id="voirSuiteAide" onclick="afficherSuiteAide()"> Lire la suite ... </a>
+                  <div id="suiteAide">
+                    <li>Dans le cas d’un stage : ne pas être rémunéré ni gratifié, stage prévu et validé par des crédits ECTS<br>
+                        dans la formation de l'Université d'Artois</li>
+                    <li>Environ 400€ par mois de mobilité</li><br>
+                  </div>
+                  </ul>
+                </li>
+
+                <li><h2>Dispositif Bourse de Mobilité Internationale du Conseil Régional<br>
+                        Hauts-de-France : La "bourse Mermoz"</h2>
+                  <ul>
+                    <p>
+                      La Région active la "bourse Mermoz" pour encourager les étudiants des Hauts-de-France à effectuer des études et stages à
+                      l'étranger, voici les principaux critères à remplir afin de pouvoir obtenir cette aide régionale :
+                    </p>
+                    <li>Être inscrit en formation dans un établissement d'enseignement supérieur de la Région Hauts-de-France (dans notre cas
+                        l'Université d'Artois), au niveau Bac+2 à Bac+8</li>
+                        <a href="#" id="voirSuiteBourse" onclick="afficherSuiteBourse()"> Lire la suite ... </a>
+                  <div id="suiteBourse">
+                    <li>La mobilité doit être faite de façon continue dans le même pays et dans un seul établissement d'accueil. </li>
+                    <li>Durée financée Séjours d'études: 4 à 26 semaines. </li>
+                    <li>Durée financée Stage: 6 à 26 semaines en formation courte (ici DUT). </li>
+                    <li>Une seule attribution possible au cours du cursus universitaire. </li>
+                    <li>Sont inéligibles: l'Assistanat, les étudiants en Formation Continue, les étudiants étrangers domiciliés en France (date entrée sur
+                        le territoire français) depuis moins de 2 ans consécutifs à la date de début de la mobilité, les étudiants en année de césure, les
+                        étudiants bénéficiaires de la bourse de mobilité d'une autre région, les étudiants non boursiers sur critères sociaux partant en
+                        stage bénéficiant d'une rémunération de plus de 230€/semaine ou logés+nourris (étudiants boursiers sur critères sociaux
+                        uniquement éligibles au forfait voyage dans ce cas). </li>
+                    <li>Le pays d'accueil doit être différent de la nationalité de l'étudiant. </li>
+                    <li>Le montant du financement dépend du Quotient familial du foyer fiscal de l'étudiant (le montant maximum étant de 92,40€
+                        par semaine.) </li>
+                    <li>Forfait de voyage de 300€ pour les étudiants boursiers sur critères sociaux. </li> <br>
+                  </div>
+                  </ul>
+                </li>
+
+                <li><h2>Allocation Erasmus+ Études</h2>
+                  <ul>
+                    <p>
+                      Intro Erasmus+ Études
+                    </p>
+                    <li>Être sélectionné pour partir avec le programme d’études Erasmus (les étudiants partant dans leur pays d’origine ne sont pas
+                        prioritaires). </li>
+                        <a href="#" id="voirSuiteEtudes" onclick="afficherSuiteEtudes()"> Lire la suite ... </a>
+                  <div id="suiteEtudes"
+                    <li>Les étudiants en situation de handicap peuvent effectuer une mobilité internationale et selon leur situation, faire la demande
+                        de financements complémentaires et spécifiques. </li>
+                    <li>La bourse Erasmus+ (études ou stage confondus) peut être perçue plusieurs fois au cours du cursus universitaire à raison de <br>
+                        12 mois maximum par cycle d'études. </li>
+                    <li>L'étudiant doit quitter le territoire 3 mois minimum de date à date (90 jours minimum) / 12 mois maximum </li>
+                    <li>Le montant mensuel de bourse est déterminé en fonction du pays d'accueil : <br>
+                      <table>
+                        <tr>
+                          <th width="100px"> Groupe </th>
+                          <th width="500px"> Pays de destination </th>
+                          <th width="500px"> Montant mobilité d'études </th>
+                        </tr>
+                        <tr>
+                          <td> Groupe 1 </td>
+                          <td> Irlande </td>
+                          <td> 200 à 300€ </td>
+                        </tr>
+                        <tr>
+                          <td> Groupe 2 </td>
+                          <td> Grèce </td>
+                          <td> 150 à 250€ </td>
+                        </tr>
+                      </table>
+                      <h3>Vous sont proposés uniquement les pays concernés par l'IUT de Lens.</h3><br>
+                    </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><h2>Allocation Erasmus+ Stages</h2>
+                  <ul>
+                    <li>Il faut effectuer un stage d'une durée minimale de 2 mois, 12 mois étant la durée maximale, dans un établissement éligible <br>
+                        (tous les organismes exerçant une activité économique relevant du secteur public ou privé sont considérés comme éligibles)</li>
+                        <a href="#" id="voirSuiteStages" onclick="afficherSuiteStages()"> Lire la suite ... </a>
+                  <div id="suiteStages">
+                    <li>Les étudiants partant dans leur pays d'origine ne sont pas prioritaire</li>
+                    <li>Les demandes pour une première mobilité sont prioritaires</li>
+                    <li>Les demandes pour un stage obligatoire dans la formation sont prioritaire</li>
+                    <li>Les étudiants en situation de handicap peuvent effectuer une mobilité internationale et selon leur situation, <br>
+                        faire la demande de financements complémentaires et spécifiques au handicap dans le cadre du programme Erasmus+. <br>
+                        Renseignements auprès du Service des Relations Internationales.</li>
+                    <li>La bourse Erasmus+ peut être perçue plusieurs fois au cours du cursus universitaire à raison de 12 mois par cycle d'études</li>
+                    <li>Le montant mensuel de bourse est déterminé en fonction du pays d'accueil : <br>
+                      <table>
+                        <tr>
+                          <th width="100px"> Groupe </th>
+                          <th width="500px"> Pays de destination </th>
+                          <th width="500px"> Montant mobilité d'études </th>
+                        </tr>
+                        <tr>
+                          <td> Groupe 1 </td>
+                          <td> Irlande </td>
+                          <td> 350 à 450€ </td>
+                        </tr>
+                        <tr>
+                          <td> Groupe 2 </td>
+                          <td> Grèce, Espagne, Pologne, Roumanie </td>
+                          <td> 300 à 400€ </td>
+                        </tr>
+                      </table>
+                      <h3>Vous sont proposés uniquement les pays concernés par l'IUT de Lens.</h3>
+                    </li>
+                  </div>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+
+        <div id="preparation">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherConseils()">
+          <p>
+            <h1>Comment s'y préparer ?</h1><br>
+              Comment faire en sorte que votre séjour à l'étranger soit une expérience réussie sur place et profitable pour votre avenir ?<br><br>
+              <ul>
+                <li><h2>Avant de partir</h2>
+                  <ul>
+                    <li><b>Pendre contact avec sa future promo</b>
+                      <p>
+                        Grâce aux réseaux sociaux, vous pouvez prendre contact avec des étudiants qui seront avec vous en cours ou a des employés qui pourront vous aider et vous conseiller pour votre stage
+                      </p>
+                    </li>
+                    <li><b>Choisir un logement</b>
+                      <p>
+                        Campus, collocation, appartement privé, chambre chez l'habitant : il existe plusieurs moyens de se loger, choisissez ce qui vous convient le mieu. Faites un tour sur les forums pour demander des conseils aux habitants
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><h2>Sur place</h2>
+                  <ul>
+                    <li><b>Se faire connaitre des professeurs</b>
+                      <p>
+                        Dans beaucoup de pays les professeurs sont très accessibles, profitez-en pour aller les voir et leur poser des questions, prolonger une thématique vue en cours.
+                      </p>
+                    </li>
+                    <li><b>Participez en classe</b>
+                      <p>
+                        Dans la plupart des pays anglo-saxons les professeurs font en sorte que le cours corresponde à un débat ou une discussion. Participer en classe vous fera comprendre les cours et améliorer votre niveau en langue.
+                      </p>
+                    </li>
+                    <li><b>Participez aux associations sportives, culturelles ...</b>
+                      <p>
+                        Une bonne façon de réussir son intégration est de participer aux activités proposées par le campus ou dans la ville. Entre le sport, les sciences, les soirées : il y a l'embarras du choix.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li><h2>De retour en france</h2>
+                  <ul>
+                    <li><b>Faire le bilan</b>
+                      <p>
+                        Une fois revenu en France prenez quelques heures pour faire le bilan de tout ce que vous avez vécu, ce que vous avez appris, ce qui vous a plus, ce que vous avez moins aimé et ce qui vous a déçu.
+                      </p>
+                    </li>
+                    <li><b>Cultiver son réseau</b>
+                      <p>
+                        Avec Internet et les réseaux sociaux, garder contact avec les personnes que vous avez rencontré est vraiment très simple. Facebook pour les amis, LinkedIn pour les contacts professionnels ou les enseignants ... Il n'est pas impossible que cela vous serve dans le cadre de votre future carrière ou pour des voyages à l'étranger.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+          </p>
+        </div>
+
+        <div id="temoignages">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherConseils()">
+          <p>
+            <h1>Témoignages</h1><br>
+            <h2>Nicolas, étudiant en DUT TC parti étudier un semestre au Canada</h2>
+            Je m'appelle Nicolas, j'ai 23 ans.<br>
+            J’ai eu l’occasion de partir pendant 6 mois en 2014 en échange au Canada pour un semestre à l’étranger.<br>
+            <br>
+            <h2>Quand as-tu commencé à préparer ton départ au Canada ?</h2>
+            J’ai pensé à partir au Canada avant même la première année de DUT.<br>
+            A 19 ans, j’étais parti aux États-Unis pendant deux mois afin de travailler au sein d’un centre aquatique en tant que moniteur puis en tant que conseiller dans un « Visitor Center » à Santa Barbara en Californie.<br>
+            J’en ai profité pour visiter le Canada sur la côté Ouest, de Seattle jusqu’à Vancouver pour atteindre la frontière de l’Alaska. J’ai bien aimé le Canada, et je me suis dit que je partirai bien pour une durée plus longue.<br>
+            <br>
+            <h2>Comment as-tu obtenu ton visa étudiant pour le Canada ?</h2>
+            J’ai fait pas mal de recherches sur ce point, car le site du gouvernement canadien n’était pas clair sur la nécessité d’un visa étudiant pour un seul semestre d’études. Après de nombreuses recherches, il s’est avéré que le visa étudiant n’était pas nécessaire dans la mesure où je souhaitais uniquement rester moins de 6 mois sur place, et que je ne souhaitais pas travailler.<br>
+            Je suis donc parti sans visa, et on m’a délivré un visa de séjour temporaire à mon arrivée à l’aéroport pour une durée de 6 mois.<br>
+            Attention, même si le visa n’est pas nécessaire avant votre départ, il faut vous assurer que vous disposez de l’ensemble des documents nécessaires pour prouver votre admission à un établissement canadien pour toute la durée de votre séjour. Lors de votre arrivée à l’aéroport, la douane n’hésitera pas à parcourir l’ensemble des documents, et vous à vous poser quelques questions sur votre capacité de financement de votre séjour.<br>
+            <br>
+            <h2>As-tu obtenu une bourse d’études pour tes études au Canada ?</h2>
+            Je ne suis pas boursier du CROUS, je n’avais donc pas d’aide financière sur critères sociaux. Je sais que certaines bourses régionales peuvent néanmoins être accessibles, mais je n’ai pas cherché outre mesure.<br>
+            <br>
+            <h2>Quel vol as-tu réservé pour le Canada ?</h2>
+            J’ai pris mes billets avec Air Transat, qui est l’une des compagnies les moins chères pour partir au Canada. Dans la mesure où je ne m’y suis pris que 3 semaines à l’avance, les billets m’ont coûté assez chers, autour de 950 euros.<br>
+            <br>
+            <h2>As-tu réservé ton logement avant de partir au Canada ?</h2>
+            Comme tout le monde, j’avais peur avant de partir de ne pas trouver d’appartement. J’ai donc commencé les recherches en France et je me suis inscrit sur des groupes Facebook afin de trouver un logement rapidement. Il y a énormément d’annonces sur les sites, et j’avais réussi à réserver une semaine avant mon départ une place dans un logement pour 7 personnes un peu excentré du campus. Au final, à mon arrivée, c’est le logement que j’ai choisi !<br>
+            En revanche, il ne faut pas se reposer sur les résidences étudiantes de l’université, qui ont énormément de règles contraignantes.<br>
+            <br>
+            <h2>Comment s’est déroulée ton arrivée au Canada ?</h2>
+            Je suis arrivé début Août, et j’ai passé les 3 premiers jours à Montréal à visiter la ville avec ma copine qui restait pour les 3 premières semaines avec moi. J’ai trouvé que l’on se faisait vite au décalage horaire.<br>
+            <br>
+            <h2>As-tu réussi à voyager durant ton semestre au Canada ?</h2>
+            Oui j’ai bien réussi à voyager ! C’est même grâce à ça que je me suis fait mon groupe d’amis. Quelqu’un avait posté une annonce pour partir à Détroit dès la mi-Septembre. On s’est retrouvé à 4 étudiants pour partir (un Belge, un Danois, et une française), et c’est devenu mon groupe d’amis proche pour le semestre.<br>
+            Pour faire court, j’ai eu l’occasion de partir durant mon semestre :
+            <ul type="circle">
+              <li>Un weekend dans un cottage au bord du lac dans la nature canadienne.</li>
+              <li>A Québec et à Montréal pour découvrir la province québécoise.</li>
+              <li>Aux Etats-Unis sur la Côte Ouest, de San Francisco jusqu’à Las Vegas.</li>
+            </ul>
+            <h2>Quel a été ton budget durant tes études au Canada ?</h2>
+            <ul type="circle">
+              <li><b>Logement :</b> 300 euros par mois. Pour une chambre de 15 m2 dans une maison de 7 personnes. J’étais malheureusement un peu loin du campus (10 min de bus).<br></li>
+              <li><b>Nourriture :</b> 350 euros par mois. En faisant quelques restaurants chaque mois.<br></li>
+              <li><b>Vol Aller-retour :</b> 950 euros. Pris un mois en avance, un peu tard donc pour obtenir le meilleur prix.<br></li>
+              <li><b>Assurances :</b> Grâce à ma carte Visa Premier, j’étais assuré sur place.<br></li>
+              <li><b>Voyages :</b> 400 euros par mois. Je partais beaucoup chaque weekend et j’ai fait quelques voyages assez lointains.<br></li>
+              <li><b>Sorties :</b> 200 euros par mois. Je sortais beaucoup chaque semaine ce qui a un coût !<br></li>
+            </ul>
+          </p>
+        </div>
+
+        <div id="plan">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherAccueil()">
+          <p>
+            <h1>Plan</h1><br>
+            <center>
+              <section class="stage">
+                <figure class="ball"></figure>
+              </section>
+            </center>
+          </p>
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoTC.png" alt="TC" title="Présentation du plan des différents séjours possibles en TC" onclick="afficherPlanTC()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoINFO.png" alt="Info" title="Présentation du plan des différents séjours possibles en Informatique" onclick="afficherPlanInfo()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoMMI.png" alt="MMI" title="Présentation du plan des différents séjours possibles en MMI" onclick="afficherPlanMMI()">
+          <img class="col-xs-1 col-sd-1 col-md-1 col-lg-1 dept-responsive" src="complements/logoGEA.png" alt="GEA" title="Présentation du plan des différents séjours possibles en GEA" onclick="afficherPlanGEA()">
+        </div>
+
+        <div id="planTC">
+
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherPlan()">
+          <p>
+            <h1>Plan TC</h1><br>
+            <img usemap="#mapTC" class="col-xs-6 col-sd-6 col-md-6 col-lg-10 plan-responsive image planTC" src="complements/planTC.png" alt="Plan TC">
+            <!--<map id="mapTC">
+              <area shape="rect" coords="278,110,288,128" onClick="afficherCEGEP()"/>
+              <area shape="rect" coords="421,084,431,102" onClick="afficherDundalk()"/>
+              <area shape="rect" coords="480,087,490,105" onClick="afficherLodz()"/>
+              <area shape="rect" coords="427,125,437,143" onClick="afficherSeville()"/>
+            </map>-->
+          </p>
+        </div>
+
+        <div id="planInfo">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherPlan()">
+          <p>
+            <h1>Plan Info</h1><br>
+            <img usemap="#mapInfo" class="col-xs-6 col-sd-6 col-md-6 col-lg-10 plan-responsive" src="complements/planInfo.png" alt="Plan Info">
+            <!--<map id="mapInfo">
+              <area shape="rect" coords="278,110,288,128" onClick="afficherUQAM()"/>
+              <area shape="rect" coords="421,084,431,102" onClick="afficherDundalk()"/>
+              <area shape="rect" coords="480,087,490,105" onClick="afficherVarsovie()"/>
+              <area shape="rect" coords="488,129,498,147" onClick="afficherLarissa()"/>
+              <area shape="rect" coords="493,108,503,126" onClick="afficherTimisoara()"/>
+            </map>-->
+          </p>
+        </div>
+
+        <div id="planMMI">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherPlan()">
+          <p>
+            <h1>Plan MMI</h1><br>
+            <img usemap="#mapMMI" class="col-xs-6 col-sd-6 col-md-6 col-lg-10 plan-responsive" src="complements/planMMI.png" alt="Plan MMI">
+            <!--<map id="mapMMI">
+              <area shape="rect" coords="278,110,288,128" onClick="afficherUQAM()"/>
+              <area shape="rect" coords="421,084,431,102" onClick="afficherDundalk()"/>
+              <area shape="rect" coords="480,087,490,105" onClick="afficherVarsovie()"/>
+              <area shape="rect" coords="488,129,498,147" onClick="afficherLarissa()"/>
+              <area shape="rect" coords="493,108,503,126" onClick="afficherTimisoara()"/>
+            </map>-->
+          </p>
+        </div>
+
+        <div id="planGEA">
+          <img src="complements/retour.png" alt="Retour" width="20px" onclick="afficherPlan()">
+          <p>
+            <h1>Plan GEA</h1><br>
+            <img usemap="#mapGEA" class="col-xs-6 col-sd-6 col-md-6 col-lg-10 plan-responsive" src="complements/planGEA.png" alt="Plan GEA">
+            <!--<map id="mapGEA">
+              <area shape="rect" coords="278,110,288,128" onClick="afficherCEGEP()"/>
+              <area shape="rect" coords="427,125,437,143" onClick="afficherSeville()"/>
+            </map>-->
+          </p>
+        </div>
+
+        <div id="CEGEP">
+          <p>
+            <h1>CEGEP (Montréal, Quebec, Canada)</h1><br>
+          </p>
+        </div>
+
+        <div id="UQAM">
+          <p>
+            <h1>UQAM (Montréal, Quebec, Canada)</h1><br>
+          </p>
+        </div>
+
+        <div id="UQAC">
+          <p>
+            <h1>UQAC (Chicoutimi, Quebec, Canada)</h1><br>
+          </p>
+        </div>
+
+        <div id="CREPUQ">
+          <p>
+            <h1>CREPUQ (Quebec, Canada)</h1><br>
+          </p>
+        </div>
+
+        <div id="dundalk">
+          <p>
+            <h1>Dundalk Institute of Technology (Dundalk, Irlande)</h1><br>
+          </p>
+        </div>
+
+        <div id="sligo">
+          <p>
+            <h1>Institute of Technology Sligo (Sligo, Irlande)</h1><br>
+          </p>
+        </div>
+
+        <div id="varsovie">
+          <p>
+            <h1>Warsaw University of Technology (Varsovie, Pologne)</h1><br>
+          </p>
+        </div>
+
+        <div id="lodz">
+          <p>
+            <h1>University of Lodz (Lodz, Pologne)</h1><br>
+          </p>
+        </div>
+
+        <div id="seville">
+          <p>
+            <h1>Universidad Pablo de Olavide (Seville, Espagne)</h1><br>
+          </p>
+        </div>
+
+        <div id="larissa">
+          <p>
+            <h1>TEI of Thessaly (Larissa, Grèce)</h1><br>
+          </p>
+        </div>
+
+        <div id="timisoara">
+          <p>
+            <h1>Universitatea de Vest din Timisoara (Timisoara, Roumanie)</h1><br>
+          </p>
+        </div>
+
+        <div id="tohoku">
+          <p>
+            <h1>KOSEN (Tohoku, Japon)</h1><br>
+          </p>
+        </div>
+
+        <div id="contact">
+          <p>
+            <h1>Contacts</h1><br>
+              <h2>Qui somme nous ?</h2>
+                Nous sommes 3 élèves de l'IUT de Lens en 1ère année de DUT Informatique.
+                <ul type="square">
+                  <li>Premièrement, Florent agé de 18 ans. Titulaire d'un Baccalauréat STI2D avec mention bien.</li>
+                  <li>Ensuite, Alexandre agé de 17 ans. Titulaire d'un Baccalauréat S.</li>
+                  <li>Pour finir, Mohamed agé de 17 ans. Titulaire d'un Baccalauréat STI2D avec mention assez bien.</li>
+                </ul>
+              <h2>Comment nous jouindre?</h2>
+                Vous pouvez nous jouindre de deux manières:
+                <ul type="circle">
+                  <li>Par mail :</li>
+                    <ul type="square">
+                      <li> Florent : florent.mullet1999@gmail.com </li>
+                      <li> Alexandre : alex.becue59@gmail.com </li>
+                      <li> Mohamed : mohamed.aarouss59@gmail.com </li>
+                    </ul>
+                  <li> Par téléphone :</li>
+                    <ul type="square">
+                      <li> Florent : 06.48.86.44.00 </li>
+                      <li> Alexandre : 06.52.58.92.08 </li>
+                      <li> Mohamed : 06.65.21.34.34 </li>
+                    </ul>
+                  </li>
+                </ul>
+              <h2>Notre équipe :</h2>
+                <div id="photo">
+                  Florent : <img class="col-xs-3 col-sd-3 col-md-3 col-lg-3" src="complements/florent.png" alt="PhotoFlorent">
+                  Alexandre : <img class="col-xs-3 col-sd-3 col-md-3 col-lg-3" src="complements/alexandre.png" alt="PhotoAlexandre">
+                  Mohamed : <img class="col-xs-3 col-sd-3 col-md-3 col-lg-3" src="complements/mohamed.png" alt="PhotoMohamed">
+                </div><br>
+            <a href="http://www.iut-lens.univ-artois.fr/" target="_blank">Site de l'IUT de Lens</a> -
+            <a href="http://www.univ-artois.fr/" target="_blank">Site de l'Université d'Artois</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+      <div class="txt-responsive">
+        <a href="#" onclick="afficherContacts()">Nous contacter</a> <br>
+        Langue : Français / <a href="project.html">English</a>
+      </div>
+  </footer>
+</html>
