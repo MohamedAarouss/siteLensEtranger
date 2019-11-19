@@ -1,0 +1,463 @@
+/* TOUT CE QUI CONCERNE LES DIV ET BALISES : MODIFIEZ ICI SI NECESSAIRE */
+body {
+  text-align: center;
+  margin-bottom: 5%;
+  background-color: rgb(120,120,120);
+}
+
+header {
+  padding-top: 1%;
+  background-color: rgb(120,120,120);
+  /*position: fixed;
+  top: 0%;*/
+}
+
+th {
+  border-style: ridge;
+  text-align: center;
+}
+
+td {
+  border-style: ridge;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26pt;
+  background-color: #257989;
+  background-image: -webkit-radial-gradient(50% 0%, ellipse cover, #35aec5, #0f3239 100%);
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+h3 {
+  font-size: 10pt;
+}
+
+h4 {
+  font-size: 9pt;
+  color: grey;
+}
+
+body a {
+  color: black;
+}
+
+body a:hover {
+  color: black;
+}
+
+.corps {
+  text-align: left;
+  font-family: Roboto-Light;
+  border-radius: 10px;
+  background-color: rgb(220,220,220);
+}
+
+footer {
+  background-color: rgb(100,100,100);
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.logo-responsive {
+  width: 100px;
+  height: 100px;
+}
+
+.dept-responsive {
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.plan-responsive {
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.txt-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.drapeaux {
+  margin-bottom: 1%;
+}
+
+.suivant {
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 91%;
+}
+
+.precedent {
+  position: absolute;
+  margin-top: 1%;
+  margin-right: 91%;
+}
+/* TOUT CE QUI CONCERNE LE MENU : NE PAS TOUCHER */
+#menu, #menu ul {
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+#menu ul {
+  position: absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  -moz-transition: .8s all .3s;
+  -webkit-transition: .8s all .3s;
+  transition: .8s all .3s;
+}
+#menu li {
+  display: inline-block;
+  position: relative;
+  border-radius:8px 8px 0 0;
+  width: auto;
+}
+#menu ul li {
+  display:inherit;
+  border-radius:0;
+}
+#menu ul li:last-child {
+  border-radius:0 0 8px 8px;
+}
+#menu li:hover ul {
+  max-height:10em;
+}
+#menu li:first-child { /* background des liens menus */
+  background-color: rgb(120,120,120);
+  /*background-colo: #9129FF;
+  background-image:-webkit-linear-gradient(top, #9129FF 0%, #280C46 100%);
+  background-image:linear-gradient(to bottom, #9129FF 0%, #280C46 100%);*/
+}
+#menu li:nth-child(2) {
+  background-color: rgb(120,120,120);
+  /*background-color: #C4FF1C;
+  background-image: -webkit-linear-gradient(top, #C4FF1C 0%, #364608 100%);
+  background-image:linear-gradient(to bottom, #C4FF1C 0%, #364608 100%);*/
+}
+#menu li:nth-child(3) {
+  background-color: rgb(120,120,120);
+  /*background-color: #F58F0A;
+  background-image:-webkit-linear-gradient(top, #F58F0A 0%, #432703 100%);
+  background-image:linear-gradient(to bottom, #F58F0A 0%, #432703 100%);*/
+}
+#menu li:nth-child(4) {
+  background-color: rgb(120,120,120);
+  /*background-color: #FF0DCC;
+  background-image:-webkit-linear-gradient(top, #FF0DCC 0%, #460438 100%);
+  background-image:linear-gradient(to bottom, #FF0DCC 0%, #460438 100%);*/
+}
+#menu li:last-child {
+  background-color: rgb(120,120,120);
+  /*background-color: #3DFF8A;
+  background-image: -webkit-linear-gradient(top, #3DFF8A 0%, #114626 100%);
+  background-image:linear-gradient(to bottom, #3DFF8A 0%, #114626 100%);*/
+}
+#menu li:first-child li { /* background des liens sous menus */
+  background:#280C46;
+}
+#menu li:nth-child(2) li {
+  background:#364608;
+}
+#menu li:nth-child(3) li {
+  background:#432703;
+}
+#menu li:nth-child(4) li {
+  background:#460438;
+}
+#menu li:last-child li {
+  background:#114626;
+}
+#menu li:first-child:hover, #menu li:first-child li:hover { /* background des liens menus et sous menus au survol */
+  background:#9129FF;
+}
+#menu li:nth-child(2):hover, #menu li:nth-child(2) li:hover {
+  background:#C4FF1C;
+}
+#menu li:nth-child(3):hover, #menu li:nth-child(3) li:hover {
+  background:#F58F0A;
+}
+#menu li:nth-child(4):hover, #menu li:nth-child(4) li:hover {
+  background:#FF0DCC;
+}
+#menu li:last-child:hover, #menu li:last-child li:hover {
+  background:#3DFF8A;
+}
+#menu a { /* les a href */
+  text-decoration:none;
+  display:block;
+  padding:8px 32px;
+  color:#fff;
+  font-family:arial;
+}
+#menu ul a {
+  padding:8px 0;
+}
+#menu li:hover li a {
+  color:#fff;
+  text-transform:inherit;
+}
+#menu li:hover a, #menu li li:hover a {
+  color:#000;
+}
+/* TOUT CE QUI CONCERNE L'AFFICHAGE : NE PAS TOUCHER */
+#accueil {
+  display: block;
+}
+#TC {
+  display: none;
+}
+#Info {
+  display: none;
+}
+#MMI {
+  display: none;
+}
+#GEA {
+  display: none;
+}
+#stages {
+  display: none;
+}
+#stagesTC {
+  display: none;
+}
+#stagesInfo {
+  display: none;
+}
+#stagesMMI {
+  display: none;
+}
+#stagesGEA {
+  display: none;
+}
+#semestres {
+  display: none;
+}
+#semestresTC {
+  display: none;
+}
+#semestresInfo {
+  display: none;
+}
+#semestresMMI {
+  display: none;
+}
+#semestresGEA {
+  display: none;
+}
+#conseils {
+  display: none;
+}
+#benefices {
+  display: none;
+}
+#financement {
+  display: none;
+}
+#preparation {
+  display: none;
+}
+#temoignages {
+  display: none;
+}
+#plan {
+  display: none;
+}
+#planTC {
+  display: none;
+}
+#planInfo {
+  display: none;
+}
+#planMMI {
+  display: none;
+}
+#planGEA {
+  display: none;
+}
+#CEGEP {
+  display: none;
+}
+#UQAM {
+  display: none;
+}
+#UQAC {
+  display: none;
+}
+#CREPUQ {
+  display: none;
+}
+#dundalk {
+  display: none;
+}
+#sligo {
+  display: none;
+}
+#varsovie {
+  display: none;
+}
+#lodz {
+  display: none;
+}
+#seville {
+  display: none;
+}
+#larissa {
+  display: none;
+}
+#timisoara {
+  display: none;
+}
+#tohoku {
+  display: none;
+}
+#contact {
+  display: none;
+}
+#suiteBourse {
+  display: none;
+}
+#suiteAide {
+	display: none;
+}
+#suiteBourse {
+	display: none;
+}
+#suiteEtudes {
+	display: none;
+}
+#suiteStages {
+	display: none;
+}
+#voirSuiteAide {
+  display: block;
+}
+#voirSuiteBourse {
+  display: block;
+}
+#voirSuiteEtudes {
+  display: block;
+}
+#voirSuiteStages {
+  display: block;
+}
+/* TOUT CE QUI CONCERNE LE PLAN ANIMÉ : NE PAS TOUCHER */
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  background: url("map.png") repeat-x;
+  background-size: auto 100%;
+  -webkit-animation: move-map 30s infinite linear;
+  -moz-animation: move-map 30s infinite linear;
+  -o-animation: move-map 30s infinite linear;
+  -ms-animation: move-map 30s infinite linear;
+  animation: move-map 30s infinite linear;
+}
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
+  z-index: 2;
+}
+.ball:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(0);
+  opacity: 0.3;
+  background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 66%, #062745 100%);
+}
+.stage {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+@-moz-keyframes move-map {
+  0% {
+    background-position: -849px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-webkit-keyframes move-map {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -849px 0;
+  }
+}
+@-o-keyframes move-map {
+  0% {
+    background-position: -849px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@-ms-keyframes move-map {
+  0% {
+    background-position: -849px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes move-map {
+  0% {
+    background-position: -849px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
